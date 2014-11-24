@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
 
   get 'posts/show/:id' => 'posts#show'
+  # This would more likely read as follows (this works but the extra 'show' is unnecessary)
+  get 'posts/:id' => 'posts#show'
+  
+  # there should also be a few other routes here
+  # get '/' => 'home#index'
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
